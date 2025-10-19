@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reviews — Answerlyzer AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
+        <span>Answerlyzer AI</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="premium.html">Premium</a>
+        <a href="help.html">Help</a>
+        <a class="active" href="reviews.html">Reviews</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>What students say</h1>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“I finally understand the steps. It’s like a patient tutor.”</p>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>“The guided prompts made my lab write-up way easier.”</p>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Premium personalization kept me engaged with sports examples.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Leave a review</h2>
+      <form id="reviewForm" class="review-form" novalidate>
+        <div class="form-row">
+          <label for="rating">Rating</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select</option>
+            <option>★★★★★</option>
+            <option>★★★★☆</option>
+            <option>★★★☆☆</option>
+            <option>★★☆☆☆</option>
+            <option>★☆☆☆☆</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="reviewText">Review</label>
+          <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p id="reviewFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
+        <div>
+          <strong>Answerlyzer AI</strong>
+          <div>Geniuses start somewhere.</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="premium.html">Premium</a>
+        <a href="help.html">Help</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
+      <div class="footer-meta">
+        <div>Email: team@answerlyzer.ai</div>
+        <div>GitHub: <a href="#">Add your repo link</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
