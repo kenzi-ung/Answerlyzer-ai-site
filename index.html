@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Answerlyzer AI — Geniuses start somewhere</title>
+  <title>
+    <span class="brand">
+      <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+    </span>
+      — <p class="tagline">
+          <span class="geniuses">Geniuses</span> start somewhere.
+        </p>
+  </title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,12 +21,14 @@
     <div class="container header-inner">
       <a class="logo" href="index.html">
         <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
-        <span>Answerlyzer AI</span>
+        <span class="brand">
+          <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+        </span>
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About us</a>
-        <a href="premium.html">Premium</a>
+        <a href="premium.html" class="nav-premium">Premium</a>
         <a href="help.html">Help</a>
         <a href="reviews.html">Reviews</a>
       </nav>
@@ -30,8 +39,11 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-left">
-        <h1>Geniuses start somewhere.</h1>
-        <p class="sub">Learn with guided, step-by-step explanations—Not copy-paste answers.</p>
+        <h1><p class="tagline">
+              <span class="geniuses">Geniuses</span> start somewhere.
+            </p>
+        </h1>
+        <p class="sub">Start learning with guided, step-by-step explanations instead of copy-pasting answers.</p>
         <div class="cta-row">
           <a href="#media" class="btn btn-primary">Watch the commercial</a>
           <a href="#examples" class="btn btn-secondary">See examples</a>
@@ -40,8 +52,11 @@
         <!-- Chatbot demo interface -->
         <div class="chatbot">
           <div class="chat-header">
-            <div class="chat-title">Answerlyzer Demo</div>
-            <div class="chat-status">Learning-first · Educational · Accurate</div>
+            <div class="chat-title">
+              <span class="brand">
+                <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+              </span> Demo</div>
+            <div class="chat-status">Educational · Intelligent · Convenient</div>
           </div>
           <div id="chatMessages" class="chat-messages">
             <!-- Demo messages will be injected by script.js -->
@@ -50,7 +65,7 @@
             <input id="chatInput" type="text" placeholder="Type a question like: Solve 2x + 3 = 7" aria-label="Demo question input" />
             <button type="submit" class="btn btn-primary">Ask</button>
           </form>
-          <div class="chat-note">Demo shows staged guidance for class presentation purposes.</div>
+          <div class="chat-note">Demo shows staged guidance for presentation purposes.</div>
         </div>
       </div>
 
@@ -58,15 +73,15 @@
         <div class="value-cards">
           <div class="card">
             <h3>Guided learning</h3>
-            <p>Step-by-step reasoning teaches concepts before answers.</p>
+            <p> Instead of spitting out the answer, Answerlyzer walks you through the necessary steps and teaches you the important concepts needed.</p>
           </div>
           <div class="card">
             <h3>Personalized</h3>
-            <p>Premium adapts explanations to your interests.</p>
+            <p>The premium version will gather data from chat histories and personalized questions to adapt to the user’s interest.</p>
           </div>
           <div class="card">
             <h3>Fast & accurate</h3>
-            <p>Clear, organized solutions to save time and stress.</p>
+            <p>The time it saves allows for more gaming, more sleep, or maybe even more Netflix.</p>
           </div>
         </div>
       </div>
@@ -77,7 +92,9 @@
   <section id="media" class="section media">
     <div class="container">
       <h2>Commercial</h2>
-      <p>See how Answerlyzer AI turns suspicion into understanding.</p>
+      <p><span class="brand">
+      <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+    </span></p>
       <!-- Replace the src with your YouTube/Vimeo embed link -->
       <div class="video-embed">
         <iframe
@@ -97,19 +114,19 @@
       <h2>Examples</h2>
       <div class="examples-grid">
         <div class="example-card">
-          <h3>Algebra walkthrough</h3>
-          <p>Solving <em>2x + 3 = 7</em> with guided steps and checks for understanding.</p>
-          <button class="btn btn-secondary demo-fill" data-demo="algebra">Load into demo</button>
+          <h3>Math</h3>
+          <p>Solving <em>2x + 3 = 7</em> step-by-step.</p>
+          <button class="btn btn-secondary demo-fill" data-demo="algebra">Ask</button>
         </div>
         <div class="example-card">
-          <h3>Literature analysis</h3>
-          <p>Thesis-building for a prompt on symbolism with scaffolded questions.</p>
-          <button class="btn btn-secondary demo-fill" data-demo="literature">Load into demo</button>
+          <h3>English</h3>
+          <p>Tackle writer's block with guided prompts.</p>
+          <button class="btn btn-secondary demo-fill" data-demo="literature">Ask</button>
         </div>
         <div class="example-card">
-          <h3>Physics problem</h3>
-          <p>Kinematics: breaking down knowns, equations, and unit checks.</p>
-          <button class="btn btn-secondary demo-fill" data-demo="physics">Load into demo</button>
+          <h3>Physics</h3>
+          <p>Kinematics: Find out the knowns, appropriate equations, and units.</p>
+          <button class="btn btn-secondary demo-fill" data-demo="physics">Ask</button>
         </div>
       </div>
     </div>
@@ -122,19 +139,17 @@
       <div class="faq-list">
         <details>
           <summary>Is this cheating?</summary>
-          <p>No. Answerlyzer AI teaches process with guided steps, helping you show work and understand concepts.</p>
-        </details>
-        <details>
-          <summary>How accurate are the explanations?</summary>
-          <p>Explanations follow logical steps and include checks for understanding to reduce mistakes.</p>
+          <p>No. <span class="brand">
+                  <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+                </span> will teach you through guided steps, helping you show work and understand concepts.</p>
         </details>
         <details>
           <summary>What’s the difference between Free and Premium?</summary>
-          <p>Free: core guidance. Premium: personalization to your interests, enhanced examples, and customization.</p>
+          <p>Free: Basic features of Answerlyzer.AI.<br>Premium: Personalized help tailored to your interests and customization.</p>
         </details>
         <details>
           <summary>Do I need an account?</summary>
-          <p>No for the demo. A free account unlocks more features; Premium adds personalization.</p>
+          <p>You do not need an account for the Demo. However, a free account unlocks more features and a Premium Account adds personalization.</p>
         </details>
       </div>
     </div>
@@ -147,15 +162,15 @@
       <div class="review-cards">
         <div class="review-card">
           <div class="stars" aria-label="5 stars">★★★★★</div>
-          <p>“Actually helps me learn. I can show my work now.”</p>
+          <p>“OMG! It helped me ace a Math test with just 1 hour of studying!”</p>
         </div>
         <div class="review-card">
           <div class="stars" aria-label="4 stars">★★★★☆</div>
-          <p>“Fast explanations with steps. Saved me during finals week.”</p>
+          <p>“The steps are informational and detailed. Since there were no ads, I was able to focus on my work.”</p>
         </div>
         <div class="review-card">
           <div class="stars" aria-label="5 stars">★★★★★</div>
-          <p>“Premium personalization made calculus click using basketball stats.”</p>
+          <p>“I was able to do my homework while learning football terms.”</p>
         </div>
       </div>
       <a class="btn btn-primary" href="reviews.html">See all reviews</a>
@@ -168,8 +183,16 @@
       <div class="footer-brand">
         <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
         <div>
-          <strong>Answerlyzer AI</strong>
-          <div>Geniuses start somewhere.</div>
+          <strong>
+            <span class="brand">
+              <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+            </span>
+          </strong>
+          <div>
+            <p class="tagline">
+              <span class="geniuses">Geniuses</span> start somewhere.
+            </p>
+          </div>
         </div>
       </div>
       <div class="footer-links">
@@ -180,7 +203,6 @@
       </div>
       <div class="footer-meta">
         <div>Email: team@answerlyzer.ai</div>
-        <div>GitHub: <a href="#">Add your repo link</a></div>
       </div>
     </div>
   </footer>

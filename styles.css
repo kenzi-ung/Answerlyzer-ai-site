@@ -144,3 +144,53 @@ a { color: var(--blue); text-decoration: none; }
   .examples-grid, .review-cards, .team-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
 }
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2em; /* adjust size as needed */
+}
+
+.brand .answer {
+  color: red;
+}
+
+.brand .lyzer {
+  color: gold; /* or yellow */
+}
+
+.brand .dot {
+  color: #000000;
+}
+
+.brand .ai {
+  color: #00c3b1;
+}
+
+.tagline {
+  font-size: 1em;   /* adjust size if needed */
+  font-weight: 500;
+  color: black;       /* default color for the rest of the text */
+}
+
+.tagline .geniuses {
+  color: rgb(250, 214, 12);        /* or yellow */
+  font-weight: 700;   /* makes "Geniuses" pop */
+  background-color: #1cd8c5; /* blue background */
+  padding: 0 4px;       /* optional: adds space so the background looks cleaner */
+  border-radius: 3px;   /* optional: rounds the corners */
+}
+
+.nav-premium {
+  background-color: gold;     /* golden background */
+  color: black !important;    /* text color for contrast */
+  font-weight: 700;           /* make it bold */
+  padding: 8px 14px;          /* button-like spacing */
+  border-radius: 6px;         /* rounded corners */
+  transition: all 0.3s ease;  /* smooth hover effect */
+}
+
+.nav-premium:hover {
+  background-color: #FFD700;  /* brighter gold on hover */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* glowing highlight */
+  transform: scale(1.05);     /* subtle zoom */
+}

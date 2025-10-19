@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Premium — Answerlyzer AI</title>
+  <title>Premium — 
+    <span class="brand">
+      <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+    </span></title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,12 +15,16 @@
     <div class="container header-inner">
       <a class="logo" href="index.html">
         <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
-        <span>Answerlyzer AI</span>
+        <span>
+          <span class="brand">
+            <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+          </span>
+        </span>
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About us</a>
-        <a class="active" href="premium.html">Premium</a>
+        <a href="premium.html" class="nav-premium">Premium</a>
         <a href="help.html">Help</a>
         <a href="reviews.html">Reviews</a>
       </nav>
@@ -26,19 +33,19 @@
 
   <section class="section">
     <div class="container narrow">
-      <h1>Upgrade to Premium</h1>
-      <p>Personalized explanations aligned to your interests, more examples, and customization options.</p>
+      <h1>Upgrade to <a href="premium.html" class="nav-premium">Premium</a></h1>
+      <p>Personalized explanations according to your interests and customization options.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Free vs Premium</h2>
+      <h2>Free vs <a href="premium.html" class="nav-premium">Premium</a></h2>
       <div class="compare-table">
         <div class="compare-row compare-header">
           <div>Feature</div>
           <div>Free</div>
-          <div>Premium</div>
+          <div><a href="premium.html" class="nav-premium">Premium</a></div>
         </div>
         <div class="compare-row">
           <div>Guided explanations</div>
@@ -60,15 +67,9 @@
           <div>—</div>
           <div>✓</div>
         </div>
-        <div class="compare-row">
-          <div>Priority support</div>
-          <div>—</div>
-          <div>✓</div>
-        </div>
       </div>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="#">Start Free</a>
         <a class="btn btn-secondary" href="#">Upgrade to Premium</a>
       </div>
     </div>
@@ -77,7 +78,21 @@
   <section class="section">
     <div class="container narrow">
       <h2>Personalization example</h2>
-      <p>Explaining algebra with basketball stats: variable isolation becomes player performance analysis—so concepts stick.</p>
+      <p><strong>Prompt:</strong> What is 2x9 - 3x5?<br>
+        <strong><span class="brand">
+          <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span></strong>
+        </span>:Having trouble with a math question? Let me help by explaining it in terms that you are familiar with.
+          <br>
+          <strong>Step 1:</strong>
+          Imagine Lebron James dunks on the Golden State Warriors 9 times. How many points would he have scored?
+          <br>
+          <strong>Step 2:</strong>
+          Imagine Stephen Curry successfully shoots five 3-pointers against the Lakers.
+          How many points would he have scored?
+          <br>
+          <strong>Step 3:</strong>
+          How many more points would Lebron James have scored compared to Stephen Curry?
+      </p>
     </div>
   </section>
 
@@ -86,8 +101,14 @@
       <div class="footer-brand">
         <img src="assets/images/logo.png" alt="Answerlyzer AI logo" />
         <div>
-          <strong>Answerlyzer AI</strong>
-          <div>Geniuses start somewhere.</div>
+          <strong>
+            <span class="brand">
+              <span class="answer">Answer</span><span class="lyzer">lyzer</span><span class="dot">.</span><span class="ai">AI</span>
+            </span>
+          </strong>
+          <div><p class="tagline">
+                <span class="geniuses">Geniuses</span> start somewhere.
+              </p></div>
         </div>
       </div>
       <div class="footer-links">
@@ -98,7 +119,6 @@
       </div>
       <div class="footer-meta">
         <div>Email: team@answerlyzer.ai</div>
-        <div>GitHub: <a href="#">Add your repo link</a></div>
       </div>
     </div>
   </footer>
